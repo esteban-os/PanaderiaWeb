@@ -1,11 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masa & Pan</title>
+  <script src="/js/mensajeria.js"  type="text/javascript"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  
 </head>
+
 <body>
+  <header>
+    <nav class="  flex items-center justify-between flex-wrap bg-black p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
+          </svg>
+        <span class="font-semibold text-5xl tracking-tight">Masa & Pan</span>
+      </div>
+      <div class="block lg:hidden">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a href="#Queques"
+            class="block mt-4 ml-5 lg:inline-block lg:mt-0 text-teal-500 text-2xl  hover:text-white mr-4">
+            Queques Artesanales
+          </a>
+          <a href="#Panes"
+            class="block mt-4 ml-5 lg:inline-block lg:mt-0 text-teal-500 text-2xl  hover:text-white mr-4">
+            Panes Artesanales
+          </a>
+          <a href="#Mermeladas"
+            class="block mt-4  ml-5 lg:inline-block lg:mt-0 text-teal-500 text-2xl  hover:text-white">
+            Mermeladas Artesanales
+          </a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <section class="home-banner flex">
+    <div class="text-center px-6 md:w-1/2 m-auto">
+      <h1 class="pt-6 pb-4 text-2xl font-bold">Haz tu pedido online en Masa & Pan
+        y recíbelo sin salir de casa. </h1>
+      <p class="pt-3 pb-10 text-1xl">
+        Los pedidos se sirven de Lunes a Sábado y se recepcionan con dos días de anticipación.
+        Los pagos se realizan por transferencia bancaria via BCP, BBVA, BIM, Yape o Lukita. Debe enviar el comprobante
+        de la transferencia a nuestro numero de whatsapp, de este modo se realizara la confirmacion de la compra y la
+        coordinacion para la entrega del producto.
+        Nuestros productos son artesanos, de producción limitada y de elaboración diaria para que los disfrutes
+        con frescura y alegría."</p>
+    </div>
+  </section>
+
+  <div id="Queques">
+    <h1 class="text-center text-2xl font-bold mt-4 mb-4"> Queques Artesanales </h1>
+  </div>
+  <section class="flex flex-wrap mx-auto">
+
+    <div class="md:w-1/3">
+      <div class="rounded overflow-hidden shadow-lg m-4 ">
+          <img class="w-full " src="img/Cake-naranjalate.jpg" alt=" queque de naranja">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Queque de Naranja y chips de Chocolate <br> S/45.00</div>
+            <p class="text-gray-700 text-base">
+              Queque de naranja con trocitos de naranja cofitada y chispas de Chocolate.
+              Ideal para compartir con toda la familia.
+            </p>
+          </div>
+  
+        <div class="flex bg-teal-500">
+          <h2 >Realizar pedido por whatsapp: </h2>
+          <button onclick="mensaje('Hola! quiero un Queque de Naranja y chips de Chocolate  S/45.00') ">
+            <img src="https://img.icons8.com/color/2x/whatsapp.png" alt="whatsapp" width="40px" />
+          </button>
+
+        </div>
+      </div>      
+    </div>
+
+
+    <div class="md:w-1/3">
+    <div class=" rounded overflow-hidden shadow-lg m-4 ">
+      <img class="w-full" src="img/Cake-chocobanana.jpg" alt="queque Chocobanana">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2"> Queque de Chocolate, platano y <br>canela <br> S/45.00</div>
+        <p class="text-gray-700 text-base">
+          Queque de Chocolate, platano machacado y canela en polvo con exquisito sabor y aroma.
+          Ideal para compartir con toda la familia.<br>
+        </p>
+      </div>
+
+      <div class="flex bg-teal-500">
+        <h2>Realizar pedido por whatsapp: </h2>
+        <button onclick="mensaje('Hola! quiero un Queque de Chocolate, platano y canela  S/45.00') ">
+          <img src="https://img.icons8.com/color/2x/whatsapp.png" alt="whatsapp" width="40px" />
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:w-1/3">  
+    <div class="rounded overflow-hidden shadow-lg m-4 ">
+      <img class="w-full" src="img/cake-vainilla-pasas.jpg" alt=" Cake vainilla y pasas">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2"> Queque de vainilla y pasas <br><br> S/.30.00</div>
+        <p class="text-gray-700 text-base">
+          Delicioso queque tradicional de vainilla con trocitos de pasas.
+          Ideal para acompañarlo con una taza de café o compartir con toda la familia.<br>
+        </p>
+      </div>
+
+      <div class="flex bg-teal-500">
+        <h2>Realizar pedido por whatsapp: </h2>
+        <button onclick="mensaje('Hola! quiero un  Queque de vainilla y pasas  S/.30.00') ">
+          <img src="https://img.icons8.com/color/2x/whatsapp.png" alt="whatsapp" width="40px" />
+        </button>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+  <div id="Panes">
+    <h1 class="text-center text-2xl font-bold  mt-4 mb-4 ">Panes Artesanales</h1>
+  </div>
+  <section class="flex flex-wrap mx-auto">
+
+    <div class="md:w-1/3">
+      <div class="rounded overflow-hidden shadow-lg m-4 ">
+        <img class="w-full" src="/img/Pan-Artesanal.jpg" alt="Pan Artesanal">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Pan Campesino <br> S/.20</div>
+            <p class="text-gray-700 text-base">
+              Pan campesino, elaborado artesanalmente con masa madre y fermentación lenta. De corteza dura
+              y de sabor especial. Ideal para acompañar embutidos, quesos y mermeladas.
+            </p>
+        </div>
+
+        <div class="flex bg-teal-500">
+            <h2>Realizar pedido por whatsapp: </h2>
+            <button onclick="mensaje('Hola! quiero un Pan Campesino S/.20') ">
+              <img src="https://img.icons8.com/color/2x/whatsapp.png" alt="whatsapp" width="40px" />
+            </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:w-1/3">
+      <div class="rounded overflow-hidden shadow-lg m-4 ">
+        <img class="w-full" src="img/pan-de-molde.jpg" alt="Pan de molde de Masa Madre">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2"> Pan de molde de Masa Madre <br> S/.15.00</div>
+            <p class="text-gray-700 text-base">
+              Pan de molde elaborado con masa madre, de textura humeda, tierna y con un sabor especial
+               con 12 horas de reposo de la Masa.
+              Ideal para comer en el desayuno.
+            </p>
+        </div>
+      
+        <div class="flex bg-teal-500">
+            <h2>Realizar pedido por whatsapp: </h2>
+            <button onclick="mensaje('Hola! quiero un Pan de molde de Masa Madre S/.15.00') ">
+              <img src="https://img.icons8.com/color/2x/whatsapp.png" alt="whatsapp" width="40px" />
+            </button>
+        </div>
+      </div>
+    </div>
+
     
+    <div class="md:w-1/3">
+      <div class="rounded overflow-hidden shadow-lg m-4 ">
+        <img class="w-full" src="img/pan-de-avena.jpg" alt=" Pan de Avena">
+        <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2"> Pan de Avena <br> S/.15.00</div>
+              <p class="text-gray-700 text-base">
+                Pan de molde elaborado con ojuelas de avena y avena molida de textura tierna y humeda con 12 horas de reposo
+                de la Masa.
+                Ideal para comer en el desayuno.
+              </p>
+        </div>
+
+          <div class="flex bg-teal-500">
+              <h2>Realizar pedido por whatsapp: </h2>
+              <button onclick="mensaje('Hola! quiero un Pan de Pan de Avena S/.15.00') ">
+                <img src="https://img.icons8.com/color/2x/whatsapp.png" alt="whatsapp" width="40px" />
+              </button>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="Mermeladas">
+    <h1 class="text-center text-2xl font-bold  mt-4 mb-4  "> Mermeladas Artesanales</h1>
+  </div>
+  <section class="flex flex-wrap mx-auto">
+
+    <div class="md:w-1/3">
+      <div class="rounded overflow-hidden shadow-lg m-4 ">
+        <img class="w-full " src="img/Mer-fresas1-1170x782.jpg" alt="mermelada de fresa">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Mermelada de Fresa <br> S/.15.00</div>
+            <p class="text-gray-700 text-base">
+              Exquisita mermelada de fresa de 350gr. Fabricada con los mejores ingredientes de producción nacional.
+              Libre de colorantes y conservantes. 100% natural.
+            </p>
+        </div>
+
+        <div class="flex bg-teal-500">
+          <h2>Realizar pedido por whatsapp: </h2>
+          <button onclick="mensaje('Hola! quiero una Mermelada de Fresa  S/.15.00') ">
+          <img src="https://img.icons8.com/color/2x/whatsapp.png" alt="whatsapp" width="40px" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:w-1/3">
+      <div class="rounded overflow-hidden shadow-lg m-4 ">
+        <img class="w-full" src="img/mermelada-naranja.jpg" alt="Mermelada de Naranja">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2"> Mermelada de Naranja <br> S/.15.00</div>
+            <p class="text-gray-700 text-base">
+              Exquisita mermelada de naranja 350 gr. Fabricada con los mejores ingredientes de producción nacional.
+              Libre de colorantes y conservantes 100% natural.
+            </p>
+        </div>
+
+        <div class="flex bg-teal-500">
+          <h2>Realizar pedido por whatsapp: </h2>
+          <button onclick="mensaje('Hola! quiero una Mermelada de Naranja  S/.15.00') ">
+          <img src="https://img.icons8.com/color/2x/whatsapp.png" alt="whatsapp" width="40px" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="md:w-1/3">
+      <div class="rounded overflow-hidden shadow-lg m-4 ">
+        <img class="w-full" src="img/mermelada-arandano.jpg" alt=" Mermelada de arandano">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2"> Mermelada de Arandano <br> S/.15.00</div>
+            <p class="text-gray-700 text-base">
+              Exquisita mermelada de arandano de 350gr. Fabricada con los mejores ingredientes de producción nacional.
+              Libre de colorantes y conservantes 100% natural.
+            </p>
+        </div>
+
+        <div class="flex bg-teal-500">
+          <h2>Realizar pedido por whatsapp: </h2>
+          <button onclick="mensaje('Hola! quiero una Mermelada de Arandano  S/.15.00') ">
+          <img src="https://img.icons8.com/color/2x/whatsapp.png" alt="whatsapp" width="40px" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <footer class="bg-black text-white">
+    <div class="contenido-p" style='text-align:center'>
+      </br>
+      </br>
+      <a href="#"><img src="img/logo.png" class="logo" class="img-fluid" alt=" &copy 2020 - Masa & Pan" /></a>
+
+    </div>
+
+
+    <div class="flex justify-center">
+      <a class="support">Contacta con Nosotros:</a>
+    </div>
+    <div class="flex justify-center">
+      <a href="https://api.whatsapp.com/send?phone=51955502884&text=Hola!%20Quiero%20realizar%20un%20pedido">
+        <img src="https://img.icons8.com/color/2x/whatsapp.png" alt="whatsapp" width="50px" />
+      </a>
+      <a href="https://es-la.facebook.com/">
+        <img src="https://img.icons8.com/color/2x/facebook.png" alt="facebook" width="50px" />
+      </a>
+      <a href="https://twitter.com/">
+        <img src="https://img.icons8.com/color/2x/twitter.png" alt="twitter" width="50px" />
+      </a>
+
+    </div>
+    </br>
+  </footer>
 </body>
+
 </html>

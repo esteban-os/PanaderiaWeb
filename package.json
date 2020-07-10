@@ -5,12 +5,15 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "npm run build && node app.js",
+    "build": "npx postcss public/css/tailwind.css -o public/css/style.css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "postcss-cli": "^7.1.1",
+    "express-reload": "^1.2.0",
     "tailwindcss": "^1.4.6"
   }
 }
